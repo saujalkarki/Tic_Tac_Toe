@@ -3,36 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/favicon.ico" />
     <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <div class="container">
       <h1>Tic_Tac_Toe</h1>
-      <h3>Player_1 wants to play?</h3>
-      <select name="wantToPlay" id="wantToPlay" value="" selected>
-        <option></option>
-        <option value="X">X</option>
-        <option value="O">O</option>
-      </select>
-      <h3>Player_1(X) &nbsp; player_2(O)</h3>
-      <h3>Player 1 is Winner</h3>
+
+      <h3>Player_1 (X) &nbsp;|&nbsp; player_2 (O)</h3>
+
       <div class="game">
-        <div class="items game1">
-          <input type="text" class="play play1" />
-          <input type="text" class="play play2" />
-          <input type="text" class="play play3" />
+        <div>
+          <div class="items game1">
+            <input type="text" class="play play1" readonly />
+            <input type="text" class="play play2" readonly />
+            <input type="text" class="play play3" readonly />
+          </div>
+          <div class="items game2">
+            <input type="text" class="play play4" readonly />
+            <input type="text" class="play play5" readonly />
+            <input type="text" class="play play6" readonly />
+          </div>
+          <div class="items game3">
+            <input type="text" class="play play7" readonly />
+            <input type="text" class="play play8" readonly />
+            <input type="text" class="play play9" readonly />
+          </div>
         </div>
-        <div class="items game2">
-          <input type="text" class="play play4" />
-          <input type="text" class="play play5" />
-          <input type="text" class="play play6" />
-        </div>
-        <div class="items game3">
-          <input type="text" class="play play7" />
-          <input type="text" class="play play8" />
-          <input type="text" class="play play9" />
-        </div>
+        <h2 class="winnerText"></h2>
+      </div>
+
+      <div class="reset">
+        <button class="resetBtn">Reset</button>
       </div>
     </div>
 
